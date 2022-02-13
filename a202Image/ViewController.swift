@@ -9,9 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var theImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if let path = Bundle.main.path(forResource: "bee", ofType: "png"){
+            print(path)
+            theImage.image = UIImage(contentsOfFile: path)
+        }
+        
+        
     }
 
 
