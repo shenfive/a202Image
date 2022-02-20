@@ -21,19 +21,34 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MZW-jS-6tn">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="235" height="256"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="cgc-4m-Uuy">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="cgc-4m-Uuy" customClass="MyCollectionViewCell" customModule="a202Image" customModuleProvider="target">
+                                        <rect key="frame" x="89.5" y="0.0" width="235" height="256"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JmZ-cj-Mex">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="235" height="256"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uk7-nU-ted">
+                                                    <rect key="frame" x="0.0" y="0.0" width="235" height="256"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uk7-nU-ted" firstAttribute="top" secondItem="JmZ-cj-Mex" secondAttribute="top" id="KqC-X7-KkV"/>
+                                                <constraint firstAttribute="bottom" secondItem="uk7-nU-ted" secondAttribute="bottom" id="fTP-Jq-r7g"/>
+                                                <constraint firstItem="uk7-nU-ted" firstAttribute="leading" secondItem="JmZ-cj-Mex" secondAttribute="leading" id="o5G-ld-eXN"/>
+                                                <constraint firstAttribute="trailing" secondItem="uk7-nU-ted" secondAttribute="trailing" id="txY-UU-Zh5"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="235" height="256"/>
+                                        <connections>
+                                            <outlet property="theImage" destination="uk7-nU-ted" id="Xlg-a7-f8o"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
