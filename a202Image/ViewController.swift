@@ -9,13 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var theImage: UIImageView!
+
+    
+    var images:[UIImage?] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        theImage.image = UIImage(named: "bee")
+        images = [UIImage(named: "image1"),
+                  UIImage(named: "image2"),
+                  UIImage(named: "image3"),
+                  UIImage(named: "image4"),
+                  UIImage(named: "image5"),
+                  UIImage(named: "image6")
+        ]
         
-        view.backgroundColor = UIColor(named: "myred")
+        
+
     }
 
 
