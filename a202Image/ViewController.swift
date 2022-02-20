@@ -90,18 +90,24 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         //出現選擇 Alert
         let alertVC = UIAlertController(title: "請問你要？",
                                         message: nil,
-                                        preferredStyle: .alert)
+                                        preferredStyle: .actionSheet)
         
         let viewAction = UIAlertAction(title: "檢視",
                                        style: .default) { ation in
             self.performSegue(withIdentifier: "goImage", sender: nil)
         }
+        
         alertVC.addAction(viewAction)
         
         alertVC.addAction(UIAlertAction(title: "取消",
                                         style: .cancel,
                                         handler: nil))
         
+        alertVC.addAction(UIAlertAction(title: "編輯",
+                                        style: .default,
+                                        handler: { action in
+            print("進入編輯頁")
+        }))
         
         
         self.present(alertVC, animated: true, completion: nil)
