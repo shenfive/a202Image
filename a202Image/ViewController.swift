@@ -7,12 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDataSource {
+
 
 
     
     var images:[UIImage?] = []
     
+    @IBOutlet weak var theCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +27,24 @@ class ViewController: UIViewController {
                   UIImage(named: "image6")
         ]
         
+        theCollectionView.dataSource = self
+        
         
 
     }
 
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath)
+        cell.backgroundColor = UIColor.red
+        return cell
+    }
+    
+    
+    
 }
 
