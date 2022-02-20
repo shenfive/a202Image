@@ -16,6 +16,8 @@ class EditImageViewController: UIViewController {
     }
 
     @IBAction func endEdit(_ sender: Any) {
+
+        
         self.dismiss(animated: true, completion: nil)
     }
 }
