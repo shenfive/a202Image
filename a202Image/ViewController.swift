@@ -29,20 +29,20 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         
         theCollectionView.dataSource = self
         
+        setLauout(numberOfLine: 3)
         
+
+
+    }
+    
+    
+    func setLauout(numberOfLine:CGFloat){
         let screenSize = UIScreen.main.bounds.size
-        
-        
         let layout = UICollectionViewFlowLayout()
-        
         layout.minimumLineSpacing = 5
-        
         layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-
-        layout.itemSize = CGSize(width: screenSize.width / 3 - 10, height: screenSize.width / 3 - 10)
-        
+        layout.itemSize = CGSize(width: screenSize.width / numberOfLine - 10, height: screenSize.width / numberOfLine - 10)
         theCollectionView.setCollectionViewLayout(layout, animated: true)
-
     }
 
 
@@ -53,10 +53,27 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! MyCollectionViewCell
         cell.theImage.image = images[indexPath.row]
+        cell.backgroundColor = UIColor.red
         return cell
     }
     
     
+    @IBAction func layoutSetting(_ sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+        
+        switch sender.selectedSegmentIndex{
+        case 0:
+            setLauout(numberOfLine: 3)
+        case 1:
+            setLauout(numberOfLine: 4)
+        case 2:
+            setLauout(numberOfLine: 5)
+        default:
+            break
+        }
+        
+        
+    }
     
 }
 

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="10K-I4-Nsh">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MZW-jS-6tn">
                                     <size key="itemSize" width="235" height="256"/>
@@ -52,6 +52,18 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eeR-pv-3G5">
+                                <rect key="frame" x="33" y="44" width="356" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                </segments>
+                                <connections>
+                                    <action selector="layoutSetting:" destination="BYZ-38-t0r" eventType="valueChanged" id="h1A-ok-Srq"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,7 +71,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="10K-I4-Nsh" secondAttribute="bottom" id="c83-ZH-64u"/>
                             <constraint firstItem="10K-I4-Nsh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qDn-hp-vGs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="10K-I4-Nsh" secondAttribute="trailing" id="r3D-Gk-MAq"/>
-                            <constraint firstItem="10K-I4-Nsh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uQM-eM-Q4p"/>
+                            <constraint firstItem="10K-I4-Nsh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="uQM-eM-Q4p"/>
                         </constraints>
                     </view>
                     <connections>
