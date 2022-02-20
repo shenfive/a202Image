@@ -14,6 +14,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     var images:[UIImage?] = []
     
+    var selectiedID = 0
+    
+    
     @IBOutlet weak var theCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -34,6 +37,22 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
 
 
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        switch segue.identifier{
+        case "goImage":
+            
+            let nextVC = segue.destination as! MyImageViewController
+            nextVC.page2Image = images[selectiedID]
+        default:
+            break
+        }
+        
+        
+ 
     }
     
     
@@ -60,7 +79,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectiedID = indexPath.row
         print(indexPath)
+        
         self.performSegue(withIdentifier: "goImage", sender: nil)
     }
     
