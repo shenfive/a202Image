@@ -106,7 +106,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         alertVC.addAction(UIAlertAction(title: "編輯",
                                         style: .default,
                                         handler: { action in
-            print("進入編輯頁")
+//            print("進入編輯頁")
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let nextVC = storyBoard.instantiateViewController(withIdentifier: "editImageVC") as! EditImageViewController
+            self.present(nextVC, animated: true, completion: nil)
+            
+            
         }))
         
         

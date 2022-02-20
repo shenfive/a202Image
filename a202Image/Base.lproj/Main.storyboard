@@ -114,6 +114,21 @@
             </objects>
             <point key="canvasLocation" x="2075" y="38"/>
         </scene>
+        <!--Edit Image View Controller-->
+        <scene sceneID="cBx-lU-zf3">
+            <objects>
+                <viewController storyboardIdentifier="editImageVC" id="1y7-1R-mue" customClass="EditImageViewController" customModule="a202Image" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJi-1h-yNj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="a1I-HY-wyW"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vzo-qn-g7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2074" y="763"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cBx-wv-Hcl">
             <objects>
@@ -139,6 +154,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
