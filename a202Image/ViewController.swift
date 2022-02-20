@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
 
 
@@ -28,6 +28,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         ]
         
         theCollectionView.dataSource = self
+        theCollectionView.delegate = self
         
         setLauout(numberOfLine: 3)
         
@@ -45,7 +46,8 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         theCollectionView.setCollectionViewLayout(layout, animated: true)
     }
 
-
+    
+    //MARK: ColletionView Delegate & DataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
@@ -56,6 +58,12 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         cell.backgroundColor = UIColor.red
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+    }
+    
+    
     
     
     @IBAction func layoutSetting(_ sender: UISegmentedControl) {
