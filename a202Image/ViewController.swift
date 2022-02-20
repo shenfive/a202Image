@@ -78,11 +78,33 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
+    
+    //這是按下 Colletion View Item 時的動作
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectiedID = indexPath.row
-        print(indexPath)
         
-        self.performSegue(withIdentifier: "goImage", sender: nil)
+        
+        //選下的圖片
+        selectiedID = indexPath.row
+    
+        let alertVC = UIAlertController(title: "請問你要？",
+                                        message: nil,
+                                        preferredStyle: .alert)
+        
+        let viewAction = UIAlertAction(title: "檢視",
+                                       style: .default) { ation in
+            self.performSegue(withIdentifier: "goImage", sender: nil)
+        }
+        alertVC.addAction(viewAction)
+        
+        alertVC.addAction(UIAlertAction(title: "取消",
+                                        style: .cancel,
+                                        handler: nil))
+        
+        
+        
+        self.present(alertVC, animated: true, completion: nil)
+        
+        
     }
     
     
