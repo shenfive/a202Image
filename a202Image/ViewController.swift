@@ -109,6 +109,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 //            print("進入編輯頁")
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let nextVC = storyBoard.instantiateViewController(withIdentifier: "editImageVC") as! EditImageViewController
+            nextVC.modalPresentationStyle = .fullScreen
             self.present(nextVC, animated: true, completion: nil)
             
             
