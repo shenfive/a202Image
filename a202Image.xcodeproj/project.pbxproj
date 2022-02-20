@@ -10,6 +10,7 @@
 		BA88C91F27C1E4B200209BD7 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88C91E27C1E4B200209BD7 /* MyCollectionViewCell.swift */; };
 		BA88C92127C207EC00209BD7 /* MyImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88C92027C207EC00209BD7 /* MyImageViewController.swift */; };
 		BA88C92327C2159900209BD7 /* EditImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88C92227C2159900209BD7 /* EditImageViewController.swift */; };
+		BA88C92527C21BDC00209BD7 /* 第六周 網路程式  Part 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BA88C92427C21BDC00209BD7 /* 第六周 網路程式  Part 1.pdf */; };
 		BAF631F227B903030092F7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF631F127B903030092F7E1 /* AppDelegate.swift */; };
 		BAF631F427B903030092F7E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF631F327B903030092F7E1 /* SceneDelegate.swift */; };
 		BAF631F627B903030092F7E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF631F527B903030092F7E1 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		BA88C91E27C1E4B200209BD7 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA88C92027C207EC00209BD7 /* MyImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageViewController.swift; sourceTree = "<group>"; };
 		BA88C92227C2159900209BD7 /* EditImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditImageViewController.swift; sourceTree = "<group>"; };
+		BA88C92427C21BDC00209BD7 /* 第六周 網路程式  Part 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "第六周 網路程式  Part 1.pdf"; sourceTree = "<group>"; };
 		BAF631EE27B903030092F7E1 /* a202Image.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a202Image.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF631F127B903030092F7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAF631F327B903030092F7E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				BA88C91E27C1E4B200209BD7 /* MyCollectionViewCell.swift */,
 				BA88C92027C207EC00209BD7 /* MyImageViewController.swift */,
 				BA88C92227C2159900209BD7 /* EditImageViewController.swift */,
+				BA88C92427C21BDC00209BD7 /* 第六周 網路程式  Part 1.pdf */,
 			);
 			path = a202Image;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA88C92527C21BDC00209BD7 /* 第六周 網路程式  Part 1.pdf in Resources */,
 				BAF631FE27B903040092F7E1 /* LaunchScreen.storyboard in Resources */,
 				BAF631FB27B903040092F7E1 /* Assets.xcassets in Resources */,
 				BAF631F927B903030092F7E1 /* Main.storyboard in Resources */,
