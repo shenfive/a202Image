@@ -86,6 +86,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         //選下的圖片
         selectiedID = indexPath.row
     
+        
+        //出現選擇 Alert
         let alertVC = UIAlertController(title: "請問你要？",
                                         message: nil,
                                         preferredStyle: .alert)
