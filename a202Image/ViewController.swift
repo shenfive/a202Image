@@ -12,12 +12,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var theImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let path = Bundle.main.path(forResource: "bee", ofType: "png"){
-            print(path)
-            theImage.image = UIImage(contentsOfFile: path)
-        }
         
+        theImage.image = UIImage(named: "bee")
         
+        view.backgroundColor = UIColor(named: "myred")
     }
 
 
